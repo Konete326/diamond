@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pak-Diamond </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+
+    hr{
+      color: skyblue;
+    
+    }
+    .l1:hover{
+      box-shadow: 10px 10px 10px 10px rgb(71, 192, 240);
+      transition: 1.5s;
+      border: groove blue ;
+    }
+    footer{
+      position: absolute;
+  
+      left: 0;
+      right: 0;
+      background: #111;
+      height: auto;
+      width: 100%;
+  
+      padding-top: 20px;
+      color: #fff;
+  }
+  .footer-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+  }
+  .footer-content h3{
+      font-size: 2.1rem;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 2rem;
+  }
+  .footer-content p{
+      max-width: 500px;
+      margin: 10px auto;
+      line-height: 28px;
+      font-size: 14px;
+      color: #cacdd2;
+  }
+  .socials{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+      margin: 0 10px;
+  }
+  .socials a{
+      text-decoration: none;
+      color: #fff;
+     
+     
+  
+     
+  
+  }
+  .socials a i{
+      font-size: 1.1rem;
+      width: 20px;
+  
+  
+      transition: color .4s ease;
+  
+  }
+  .socials a:hover i{
+      color: aqua;
+  }
+  
+  .footer-bottom{
+      background: #000;
+      width: 100% ;
+      padding: 20px;
+  padding-bottom: 40px;
+      text-align: center;
+  }
+  .footer-bottom p{
+  float: left;
+      font-size: 14px;
+      word-spacing: 2px;
+      text-transform: capitalize;
+  }
+  .footer-bottom p a{
+    color:#44bae8;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .footer-bottom span{
+      text-transform: uppercase;
+      opacity: .4;
+      font-weight: 200;
+  }
+  .footer-menu{
+    float: right;
+  
+  }
+  .footer-menu ul{
+    display: flex;
+  }
+  .footer-menu ul li{
+  padding-right: 10px;
+  display: block;
+  }
+  .footer-menu ul li a{
+    color: #cfd2d6;
+    text-decoration: none;
+  }
+  .footer-menu ul li a:hover{
+    color: #27bcda;
+  }
+  
+  @media (max-width:500px) {
+  .footer-menu ul{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  }
+  
+  </style>
+</head>
+<body style="background-color: rgb(235, 235, 235);">
+    
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="image/d1-removebg.png" alt="" width="50px"> Pak-Diamond</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="image/d1-removebg.png" alt="" width="50px"> Pak-Diamond</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#diamond">Diamond</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#dwatch">Diamond Watch</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#swatch">Smart Watch</a>
+                </li>
+                </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br><br><br><br><br>
+      <div class="container" >
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" >
+                    <div class="carousel-inner" >
+                      <div class="carousel-item active" >
+                        <img src="image/2.PNG" class="d-block w-100" alt="..."style="border-radius: 10%;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/3.PNG" class="d-block w-100" alt="..."style="border-radius: 10%;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/4.PNG" class="d-block w-100" alt="..."style="border-radius: 10%;">
+                      </div>
+                   
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+      </div>
+      <center>
+<div class="container">
+    <div class="row">
+        <div id="Home" class="col-md-12 col-sm-12 col-lg-6"  style=" margin-top: 250px; z-index: 2;">
+            <h3>
+              Diamond Value, Price, and Jewelry Information
+            </h3>
+            <hr size="10px">
+            <br>
+            <h4>
+              Diamond is the most romanticized and heavily marketed of all gemstones. Nearly every jewelry establishment handles diamonds, even if it has no other gemstones in stock. The annual world production of diamonds is on the order of 10 tons. Of course, only a small percentage of this is gem quality, but diamond of very fine quality is nowhere near as scarce as equivalently high quality ruby or emerald.
+            </h4>
+        </div>
+        <div class="col-md-12 col-sm-12 col-lg-6">
+             <img src="image/d1-removebg.png" alt="" width="400rem"  style=" margin-top: 220px; z-index: 2;">
+
+          </div>
+          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/aa1b1598-1e9c-4678-9334-ed21b7559a4b/7uvw8A0qZb.json" background="transparent" speed="2" style="width: 200px; height: 300px;" loop autoplay></dotlottie-player>
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div id="diamond" class="card  text-center l1" >
+                <img src="image/d2.png" width="200rem" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Diamond</h5>
+                  <hr>
+                  <p class="card-text">0.044. This high dispersion in a colorless diamond creates the "fire" that is the source of the diamond's attractiveness</p>
+                  <a href="#" class="btn btn-primary "data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-center l1" >
+            <img src="image/d7.png" width="200rem" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Diamond</h5>
+              <hr>
+              <p class="card-text">0.044. This high dBuyispersion in a colorless diamond creates the "fire" that is the source of the diamond's attractiveness</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</a>
+            </div>
+          </div></div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-center l1" >
+                <img src="image/d1-removebg.png" width="200rem" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Diamond</h5>
+                  <hr>
+                  <p> class="card-text">0.044. This high dispersion in a colorless diamond creates the "fire" that is the source of the diamond's attractiveness</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-center l1" >
+                <img src="image/d3.png" width="200rem" class="card-img-top"  alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Diamond</h5>
+                  <hr>
+                  <p class="card-text">0.044. This high dispersion in a colorless diamond creates the "fire" that is the source of the diamond's attractiveness</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br>
+<center>
+  <h1>
+    Watch
+  </h1>
+  <hr>
+</center>
+<br><br>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12" id="dwatch"><img src="image/w2.png" alt="" width="400rem"></div>
+     
+      <div class="col-lg-6 col-sm-12 col-md-6">
+        <h1>
+          Diamond Watches
+        </h1>
+        <hr>
+        <br>
+<h3>
+Our diamond set watches are the perfect combination of class and luxury, featuring our classic designs embellished with sparkling white diamonds. Diamonds are popular due to their hardness and sparkle, so when paired with exquisite Classique designs, with European influence, your timepiece will be the perfect accessory.
+</h3>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center l1" style="width: 18rem;">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="image/w1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="image/w2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="image/w3.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+    <div class="card-body">
+      <h5 class="card-title">Watch</h5>
+      <hr>
+      <p class="card-text">Diamond watches are almost ubiquitous these days but many of what we see are usually aftermarket pieces that is, branded timepieces that have been adorned by jewelers</p>
+      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</a>
+    </div>
+  </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center l1" style="width: 18rem;">
+                <img src="image/w8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Watch</h5>
+                  <hr>
+                  <p class="card-text">Diamond watches are almost ubiquitous these days but many of what we see are usually aftermarket pieces that is, branded timepieces that have been adorned by jewelers</p>
+                  <a href="#" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center l1" style="width: 18rem;">
+                <div class="card text-center l1" style="width: 18rem;">
+                  <div id="a1" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="image/w4.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/w5.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="image/w6.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#a1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#a1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+      <div class="card-body">
+        <h5 class="card-title">Watch</h5>
+        <hr>
+        <p class="card-text">Diamond watches are almost ubiquitous these days but many of what we see are usually aftermarket pieces that is, branded timepieces that have been adorned by jewelers</p>
+        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy Now</a>
+      </div>
+    </div>
+        </div>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12" id="swatch">
+            <center>
+                <h1 style="margin-top:7rem ;">
+                  Smart Watch 
+                </h1>
+                <hr>
+              </center>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div >
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>   
+            <dotlottie-player src="https://lottie.host/bded887c-c359-4bc9-bc1a-df08e77e859e/SEdWlk96XP.json" background="transparent" speed="1" style="   width: 300px; height: 300px; z-index: 1;" loop autoplay></dotlottie-player>
+            
+            </div>
+        </div>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="image/sw2-removebg-preview.png" alt="" width="380rem">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1>
+                Apple Watch
+              </h1>
+              <hr>
+              <h2>Custom Apple silicon makes Apple Watch Series 9 more capable, more intuitive, and faster. The dual-core CPU has 5.6 billion transistors — 60 percent more than the S8 chip. A four-core Neural Engine processes machine learning tasks up to two times faster. It enables a number of innovations, including the double tap gesture.</h2></div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h1>
+                Smart
+              </h1>
+              <hr>
+              <h4>
+                At the same time, advances in silicon miniaturization opened the door to other kinds of dedicated-purpose smartwatches. Companies like Garmin, for example, support smartwatches like the Fenix, which are more rugged and optimized with sensors and trackers to support back-country expeditions. Likewise, companies like Suunto released smartwatches optimized for scuba diving that withstand extended time at significant depths.
+              </h4>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+            <dotlottie-player src="https://lottie.host/730ac71b-1a5e-4e2f-8001-fb76efe3e81b/Gcs5niDc4O.json" background="transparent" speed="1" style="width: 20rem; height: 300px;" loop autoplay></dotlottie-player>
+        </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+</center>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"> <img src="image/d1-removebg.png" alt="" width="50px"> Pak-Diamond</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6"><img src="image/d1.jpg" alt="" width="200px"></div>
+              <br>
+              <div class="col-md-6"><h5>
+                Is So Expensive...
+              </h5>
+              <hr>
+              <p>
+                We rate every diamond based on its Fair Price estimate to help you better understand if its truly a great deal. StoneAlgo indexes over 2,000,000 diamond prices daily to ensure these deal ratings are fair and accurate.
+  
+  
+              </p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        <footer>
+          <div class="footer-content">
+              <h3>Diamond</h3>
+              
+          
+              <p>Pak-Diamond is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p>
+              <ul class="socials">
+                  <li><a href="https://www.facebook.com/sameerakram.sameerakram.39"><i class="fa fa-facebook"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  
+      <dotlottie-player src="https://lottie.host/28d308fa-5a8e-429f-9159-4089668dbb54/EaSAkyV8Bh.json" background="transparent" speed="1" style="width: 50px; height: 300px;" loop autoplay></dotlottie-player></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  
+                    <dotlottie-player src="https://lottie.host/0efc6746-f548-4e5a-8858-452d1fe7c48f/ZMtDWB3DFA.json" background="transparent" speed="1" style="width: 50px; height: 300px;" loop autoplay></dotlottie-player></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  
+                    <dotlottie-player src="https://lottie.host/e0b78d22-1b41-439f-a9c2-af0da0dcd075/owmqdgXLQS.json" background="transparent" speed="1" style="width: 50px; height: 300px;" loop autoplay></dotlottie-player></i></a></li>
+                  <li><a href="#"><i class="fa fa-youtube"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  
+                    <dotlottie-player src="https://lottie.host/22c77a19-3d70-4e3a-86dc-10889257b36d/sEo0CtIxcN.json" background="transparent" speed="1" style="width: 50px; height: 300px;" loop autoplay></dotlottie-player></i></a></li>
+                  <li><a href="https://www.instagram.com/sameerakrams/"><i class="fa fa-linkedin-square"><script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  
+                    <dotlottie-player src="https://lottie.host/c1bfa8bc-4f6a-49de-8690-1af41586ba18/02CUYYxTZm.json" background="transparent" speed="1" style="width: 50px; height: 300px;" loop autoplay></dotlottie-player></i></a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>copyright &copy; <a href="#">Konete Developer</a>  </p>
+                      <div class="footer-menu">
+                        <ul class="f-menu">
+                          <li><a href="">Home</a></li>
+                          <li><a href="">About</a></li>
+                          <li><a href="">Contact</a></li>
+                          <li><a href="">Blog</a></li>
+                        </ul>
+                      </div>
+          </div>
+  
+      </footer>
+</body>
+</html>

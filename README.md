@@ -3,8 +3,9 @@ Diamond Web
 
 A responsive website showcasing a collection of diamond products with a modern design and smooth user experience.
 
-Demo
-https://github.com/Konete326/diamond.git
+live Demo
+https://diamond-watch.netlify.app
+
 
 Features
 
